@@ -54,7 +54,7 @@ void PrintMatrixArray(int[,] inArray)
 
 void FindElement(int[] coordinatesPosition, int[,] array)
 {
-    if (coordinatesPosition[0] < (array.GetLength(0) + 1) && coordinatesPosition[1] < array.GetLength(1))
+    if (coordinatesPosition[0] < array.GetLength(0) && coordinatesPosition[1] < array.GetLength(1))
     {
         WriteLine($"Элемент найден: {array[coordinatesPosition[0], coordinatesPosition[1]]}");
     }
